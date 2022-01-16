@@ -1,0 +1,17 @@
+//Create Database
+create database bank;
+
+//To add tables use our bank db
+use bank;
+
+//Create table userinfo to store user data
+create table userinfo(name varchar(20), email varchar(50), mobile char(10), pass varchar(200), address varchar(100), bname varchar(10), accno varchar(20), Primary Key(email));
+
+//Create banks table to store data//
+create table boi(accno varchar(20), amnt int(10), status int(1));
+
+create table sbi(accno varchar(20), amnt int(10), status int(1));
+
+create table pnb(accno varchar(20), amnt int(10), status int(1));
+
+create table hdfc(accno varchar(20), amnt int(10), status int(1));
